@@ -48,17 +48,17 @@
 
         .container li {
             margin-bottom: 20px;
-            line-height: 1.5;
-        }
-
-        .container li::before {
-            content: "▻ ";
-            font-weight: bold;
         }
 
         .container li span {
             display: block;
             margin-top: 5px;
+        }
+
+        .container li::after {
+            content: "";
+            display: block;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -71,7 +71,7 @@
 
     <!-- Container section -->
     <div class="container">
-        <h2>The Problems I Encountered and My Solutions</h2>
+        <h2>The problems I encountered and my solution</h2>
         <ul>
             <li>
                 <span>Problem1: HTML code's website didn't appear in preview</span>
