@@ -39,6 +39,27 @@
             font-size: 22px;
             font-weight: bold;
         }
+
+        /* Style for list items */
+        .container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .container li {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .container li::before {
+            content: "▻ ";
+            font-weight: bold;
+        }
+
+        .container li span {
+            display: block;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
@@ -51,42 +72,33 @@
     <!-- Container section -->
     <div class="container">
         <h2>The problems I encountered and my solution</h2>
-  <ul>
-            <li>▻   
-              Problem1: HTML code's website didn't appear in preview
-                      Solution: It doesn't appear in preview, you can only see it in the real website
+        <ul>
+            <li>
+                <span>Problem1: HTML code's website didn't appear in preview</span>
+                <span>Solution: It doesn't appear in preview, you can only see it in the real website</span>
             </li>
-      <p></p>
-            <li>▻ 
-             Problem2: I don't know how to apply CSS code in Github 
-                     Solution: CSS could be written in a style compartment in the same page with the actual html code
+            <li>
+                <span>Problem2: I don't know how to apply CSS code in Github</span>
+                <span>Solution: CSS could be written in a style compartment in the same page with the actual html code</span>
             </li>
-          <p></p>
-            <li>▻ 
-                Problem3: My website isn't in fully HTML code, it is written in an .md file (Not sure if this a problem) 
-                        Solution: I wrote my website in HTML code later on so I didn't use .md files.
+            <li>
+                <span>Problem3: My website isn't in fully HTML code, it is written in a .md file (Not sure if this is a problem)</span>
+                <span>Solution: I wrote my website in HTML code later on so I didn't use .md files.</span>
             </li>
-        <p></p>
-            <li>▻
-            Problem4: I don't know how to open a individual website for diffrent files in a repository 
-                    Solution: I would just include the names of .html files in my main index.html and it would link to those specifically named websites.
-            
+            <li>
+                <span>Problem4: I don't know how to open an individual website for different files in a repository</span>
+                <span>Solution: I would just include the names of .html files in my main index.html and it would link to those specifically named websites.</span>
             </li>
-        <p></p>
-            <li>▻
-            Problem5: I couldn't load Xcode projects on Git-Hub
-                    Solution: I created new playgrounds which linked to a diffrent Git-Hub repository and then transferred my codes into the new playgrounds. After that I added a commit message before hitting commit
-                  <p></p>
-            <li>▻
-            Problem6: When I tried to open my .html website, it showed a 404 Not Found Page
-                    Solution: I opened a new repositroy with only a index.html file in it. I wrote my html code there and made ChatGPT check it so there are no errors in the code. When the home page (index.html) was functioning right, I added the other required pages and made sure there were no errors in their code too. I also did Related Repository > Settings > Pages > Set to Main and Root 
-            
+            <li>
+                <span>Problem5: I couldn't load Xcode projects on GitHub</span>
+                <span>Solution: I created new playgrounds which linked to a different GitHub repository and then transferred my codes into the new playgrounds. After that I added a commit message before hitting commit</span>
             </li>
-   
-      
+            <li>
+                <span>Problem6: When I tried to open my .html website, it showed a 404 Not Found Page</span>
+                <span>Solution: I opened a new repository with only an index.html file in it. I wrote my HTML code there and made ChatGPT check it so there were no errors in the code. When the home page (index.html) was functioning right, I added the other required pages and made sure there were no errors in their code too. I also did Related Repository > Settings > Pages > Set to Main and Root</span>
+            </li>
         </ul>
     </div>
 
 </body>
 </html>
-
